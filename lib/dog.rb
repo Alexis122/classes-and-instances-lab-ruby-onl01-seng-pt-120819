@@ -25,11 +25,3 @@ describe 'Dog' do
     end
   end
 end
-
-describe 'Person' do
-  it 'is defined within lib/person.rb' do
-    if file_includes_class_definition('lib/person.rb','Person')
-      expect(defined?(Person)).to be_truthy
-      expect(Person).to be_a(Class)
-    end
-  end
