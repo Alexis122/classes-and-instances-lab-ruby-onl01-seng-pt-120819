@@ -1,3 +1,10 @@
+describe 'Person' do
+  it 'is defined within lib/person.rb' do
+    if file_includes_class_definition('lib/person.rb','Person')
+      expect(defined?(Person)).to be_truthy
+      expect(Person).to be_a(Class)
+    end
+  end
 
   context 'variables defined in lib/person.rb' do
     it 'defines a local variable adele_goldberg as an instance of a Person' do
