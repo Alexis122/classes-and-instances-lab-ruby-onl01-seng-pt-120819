@@ -5,7 +5,6 @@ describe 'Person' do
       expect(Person).to be_a(Class)
     end
   end
-
   context 'variables defined in lib/person.rb' do
     it 'defines a local variable adele_goldberg as an instance of a Person' do
       adele_goldberg = get_variable_from_file("lib/person.rb", "adele_goldberg")
